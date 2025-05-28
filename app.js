@@ -31,17 +31,26 @@ function setAnimationScroll() {
         console.log("Playing audio:", audio.src);
     }
 
-    let runAnimation = gsap.timeline({
+    let scrubAnimation = gsap.timeline({
         scrollTrigger: {
             trigger: "#bg_city",
             start: "top top",
-            end: "+=40000",
+            end: "+=10000",
             scrub: true,
             pin: true
         }
     });
+    let unscrubAnimation = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#bg_city",
+            start: "top top",
+            end: "+=10000",
+            scrub: false,
+            pin: true
+        }
+    });
 
-    runAnimation.add([
+    scrubAnimation.add([
         gsap.to("#bg_city svg", 10, {
             scale: 5,
             transformOrigin: "50% 50%",
@@ -60,7 +69,7 @@ function setAnimationScroll() {
             onStart: () => document.querySelector("#sticker3").classList.add("shallow")
         })
     ])
-        .add([
+    scrubAnimation.add([
             gsap.to("#stern", 20, {
                 scale: 0.5,
                 transformOrigin: "50% 50%",
@@ -112,7 +121,7 @@ function setAnimationScroll() {
             transformOrigin: "50% 60%",
         })
         ])
-        .add([
+        unscrubAnimation.add([
         gsap.to("#text1", 5, {
             opacity: 0,
         }),
@@ -122,7 +131,7 @@ function setAnimationScroll() {
             transformOrigin: "50% 60%",
             })
         ])
-        .add([
+        scrubAnimation.add([
         gsap.to("#text2", 5, {
             opacity: 0,
         })
