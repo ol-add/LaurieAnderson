@@ -12,6 +12,9 @@ function loadSVG() {
                     mensch.addEventListener('click', () => {
                         window.open('https://youtu.be/CL2a8fos5NI?si=O1-UlX4rXeltFaDo', '_blank');
                     });
+                    mensch.addEventListener('touchend', () => {
+                        window.open('https://youtu.be/CL2a8fos5NI?si=O1-UlX4rXeltFaDo', '_blank');
+                    });
                 }
             }, 100); // невелика затримка, щоб SVG точно вставився
             setAnimationScroll();
