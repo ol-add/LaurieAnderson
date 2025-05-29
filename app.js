@@ -1,5 +1,5 @@
 function loadSVG() {
-    fetch("assets/mainstickertext1.svg")
+    fetch("assets/final.svg")
         .then(response => response.text())
         .then((svg) => {
             document.getElementById('bg_city').innerHTML = svg;
@@ -70,6 +70,9 @@ function setAnimationScroll() {
             transformOrigin: "50% 50%",
             onStart: () => playAudio(audio0)
         }),
+        gsap.to("#textstart", 0.5, {
+            opacity: 0,
+        }),
         gsap.to("#sticker0", {
             onStart: () => document.querySelector("#sticker0").classList.add("shallow")
         }),
@@ -83,6 +86,7 @@ function setAnimationScroll() {
             onStart: () => document.querySelector("#sticker3").classList.add("shallow")
         })
     ]).add([
+        
         gsap.to("#stern", 2, {
             scale: 0.5,
             transformOrigin: "50% 50%",
@@ -92,9 +96,9 @@ function setAnimationScroll() {
             transformOrigin: "50% 50%",
             onStart: () => playAudio(audio1)
         }),
-        gsap.to("#zickzack", 1, {
+        gsap.to("#zickzackbg", 1, {
             scale: 5,
-            transformOrigin: "50% 60%",
+            transformOrigin: "50% 90%",
             
             
         }),
@@ -203,12 +207,9 @@ function setAnimationScroll() {
             })
         ])
         .add([
-            gsap.to("#zickzack", 25, {
-                opacity: 0
-            }),
-            gsap.to("#zickzack", 40, {
+                gsap.to("#zickzackbg", 30, {
                 scale: 3,
-                transformOrigin: "50% 150%",
+                transformOrigin: "50% 250%",
                 onStart: () => playAudio(audio3) // Запускаємо другий трек
         
             })
@@ -231,6 +232,9 @@ function setAnimationScroll() {
         ])*/
      
         .add([
+            gsap.to("#zickzackbg", 1, {
+                opacity: 0
+            }),
             gsap.to("#tunnel1", 55, {
                 scale: 260,
                 rotation: -180,
@@ -270,12 +274,25 @@ function setAnimationScroll() {
                 rotation: 180,
                 transformOrigin: "50% 50%",
             }),
-            gsap.to("#mensch", 305, {
+            gsap.to("#licht", 305, {
                 scale: 540,
                 transformOrigin: "50% 50%"
                 
+            }),
+            gsap.to("#licht", 200, {
+                opacity: 0.2
+                
+            }),
+            gsap.to("#textfinish", 10, {
+                scale: 2
+                
+            }),
+            gsap.to("#mensch", 200, {
+                scale: 570,
+                transformOrigin: "50% 50%"
+                
             })
-            /*gsap.to("#circle", 295, {
+        /*gsap.to("#circle", 295, {
                 scale: 540,
                 transformOrigin: "50% 50%"
             })*/
