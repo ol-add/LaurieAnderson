@@ -256,22 +256,20 @@ function setAnimationScroll() {
             gsap.to("#tunnel5", 215, {
                 scale: 300,
                 rotation: -180,
-                transformOrigin: "50% 50%"
+                transformOrigin: "50% 50%",
+                onStart: () => {
+                    // mensch вже видно — робимо його клікабельним
+                    document.querySelectorAll('#bg_city svg > *:not(#mensch)').forEach(el => {
+                        el.style.pointerEvents = 'none';
+                    });
+                    const mensch = document.querySelector('#mensch');
+                    if (mensch) mensch.style.pointerEvents = 'auto';
+                }
             }),
             gsap.to("#tunnel6", 255, {
                 scale: 420,
                 rotation: 180,
                 transformOrigin: "50% 50%",
-                onComplete: () => {
-                    // Прибираємо pointer-events у всіх, крім mensch
-                    document.querySelectorAll('#bg_city svg > *:not(#mensch)').forEach(el => {
-                        el.style.pointerEvents = 'none';
-                        el.style.opacity = 0; // якщо треба сховати
-                    });
-                    // mensch залишаємо видимим і клікабельним
-                    const mensch = document.querySelector('#mensch');
-                    if (mensch) mensch.style.pointerEvents = 'auto';
-                }
             }),
             gsap.to("#mensch", 305, {
                 scale: 540,
