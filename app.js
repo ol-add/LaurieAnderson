@@ -261,10 +261,6 @@ function setAnimationScroll() {
             gsap.to("#tunnel6", 255, {
                 scale: 420,
                 rotation: 180,
-                transformOrigin: "50% 50%"
-            }),
-            gsap.to("#mensch", 305, {
-                scale: 540,
                 transformOrigin: "50% 50%",
                 onComplete: () => {
                     // Прибираємо pointer-events у всіх, крім mensch
@@ -276,6 +272,11 @@ function setAnimationScroll() {
                     const mensch = document.querySelector('#mensch');
                     if (mensch) mensch.style.pointerEvents = 'auto';
                 }
+            }),
+            gsap.to("#mensch", 305, {
+                scale: 540,
+                transformOrigin: "50% 50%"
+                
             })
             /*gsap.to("#circle", 295, {
                 scale: 540,
