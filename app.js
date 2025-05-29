@@ -4,6 +4,16 @@ function loadSVG() {
         .then((svg) => {
             document.getElementById('bg_city').innerHTML = svg;
             document.querySelector('#bg_city svg').setAttribute('preserveAspectRatio', 'xMidYMid slice');
+            // Додаємо клік на mensch
+            setTimeout(() => {
+                const mensch = document.querySelector('#mensch');
+                if (mensch) {
+                    mensch.style.cursor = 'pointer';
+                    mensch.addEventListener('click', () => {
+                        window.open('https://youtu.be/CL2a8fos5NI?si=O1-UlX4rXeltFaDo', '_blank');
+                    });
+                }
+            }, 100); // невелика затримка, щоб SVG точно вставився
             setAnimationScroll();
         });
 }
@@ -252,7 +262,17 @@ function setAnimationScroll() {
             }),
             gsap.to("#mensch", 305, {
                 scale: 540,
-                transformOrigin: "50% 50%"
+                transformOrigin: "50% 50%",
+                onComplete: () => {
+                    // Прибираємо pointer-events у всіх, крім mensch
+                    document.querySelectorAll('#bg_city svg > *:not(#mensch)').forEach(el => {
+                        el.style.pointerEvents = 'none';
+                        el.style.opacity = 0; // якщо треба сховати
+                    });
+                    // mensch залишаємо видимим і клікабельним
+                    const mensch = document.querySelector('#mensch');
+                    if (mensch) mensch.style.pointerEvents = 'auto';
+                }
             })
             /*gsap.to("#circle", 295, {
                 scale: 540,
