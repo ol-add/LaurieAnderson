@@ -81,6 +81,27 @@ function setAnimationScroll() {
         }),
         gsap.to("#sticker3", {
             onStart: () => document.querySelector("#sticker3").classList.add("shallow")
+        }),
+        gsap.to("#sticker4", {
+            onStart: () => document.querySelector("#sticker4").classList.add("shallow")
+        }),
+        gsap.to("#sticker5", {
+            onStart: () => document.querySelector("#sticker5").classList.add("shallow")
+        }),
+        gsap.to("#sticker6", {
+            onStart: () => document.querySelector("#sticker6").classList.add("shallow")
+        }),
+        gsap.to("#sticker7", {
+            onStart: () => document.querySelector("#sticker7").classList.add("shallow")
+        }),
+        gsap.to("#sticker8", {
+            onStart: () => document.querySelector("#sticker8").classList.add("shallow")
+        }),
+        gsap.to("#sticker9", {
+            onStart: () => document.querySelector("#sticker9").classList.add("shallow")
+        }),
+        gsap.to("#sticker10", {
+            onStart: () => document.querySelector("#sticker10").classList.add("shallow")
         })
     ])/*;
     unscrubAnimation*/.add([
