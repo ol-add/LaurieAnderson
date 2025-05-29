@@ -82,8 +82,7 @@ function setAnimationScroll() {
         gsap.to("#sticker3", {
             onStart: () => document.querySelector("#sticker3").classList.add("shallow")
         })
-    ])/*;
-    unscrubAnimation*/.add([
+    ]).add([
         gsap.to("#stern", 2, {
             scale: 0.5,
             transformOrigin: "50% 50%",
