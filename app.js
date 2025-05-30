@@ -48,7 +48,7 @@ function setAnimationScroll() {
         scrollTrigger: {
             trigger: "#bg_city",
             start: "top top",
-            end: "+=10000",
+            end: "+=20000",
             scrub: true,
             pin: true
         }
@@ -65,7 +65,7 @@ function setAnimationScroll() {
     });*/
 
     scrubAnimation.add([
-        gsap.to("#bg_city svg", 10, {
+        gsap.to("#bg_city svg", 50, {
             scale: 5,
             transformOrigin: "50% 50%",
             onStart: () => playAudio(audio0)
@@ -87,11 +87,11 @@ function setAnimationScroll() {
         })
     ]).add([
         
-        gsap.to("#stern", 2, {
+        gsap.to("#stern", 120 , {
             scale: 0.5,
             transformOrigin: "50% 50%",
         }),
-        gsap.to("#bg_city svg", 3, {
+        gsap.to("#bg_city svg", 120, {
             scale: 10,
             transformOrigin: "50% 50%",
             onStart: () => playAudio(audio1)
@@ -102,61 +102,62 @@ function setAnimationScroll() {
             
             
         }),
-        gsap.to("#sticker4", 2, {
-            translateX: 300,
+        gsap.to("#sticker4", 50, {
+            translateX: 700,
             translateY: 300,
         }),
-        gsap.to("#sticker5", 2, {
-            translateX: 300,
+        gsap.to("#sticker5", 50, {
+            translateX: 700,
             translateY: -700,
         }),
-        gsap.to("#sticker6", 2, {
-            translateX: -300,
+        gsap.to("#sticker6", 50, {
+            translateX: -700,
             translateY: 300,
         }),
-        gsap.to("#sticker7", 2, {
-            translateX: -300,
+        gsap.to("#sticker7", 50, {
+            translateX: -700,
             translateY: 800,
         }),
-        gsap.to("#sticker8", 2, {
-            translateX: -300,
+        gsap.to("#sticker8",50, {
+            translateX: -700,
             translateY: 300,
         }),
-        gsap.to("#sticker9", 2, {
+        gsap.to("#sticker9", 50, {
             translateX: 600,
             translateY: 300,
         }),
-        gsap.to("#sticker10", 2, {
+        gsap.to("#sticker10", 50, {
             translateX: -600,
             translateY: 300,
         }),
-        gsap.to("#text2", 5, {
+        gsap.to("#text2", 100, {
             opacity: 0.5,
         }),
-        gsap.to("#text1", 1, {
+        gsap.to("#text1", 100, {
             scale: 3,
             transformOrigin: "50% 60%",
         })
     ])/*;
        scrubAnimation*/.add([
-        gsap.to("#text1", 5, {
+        gsap.to("#text1", 150, {
             opacity: 0,
+            scale: 0.5,
         }),
-        gsap.to("#text2", 1, {
+        gsap.to("#text2", 150, {
             opacity: 1,
             scale: 3,
             transformOrigin: "50% 60%",
         })
     ])/*;
     unscrubAnimation*/.add([
-        gsap.to("#text2", 5, {
+        gsap.to("#text2", 200, {
             opacity: 0,
         })
     ])/*;
     
     scrubAnimation*/.add([
             
-        gsap.to("#bg_city svg", 2, {
+        gsap.to("#bg_city svg", 30, {
                 
             scale: 20,
             transformOrigin: "50% 50%"
@@ -164,51 +165,47 @@ function setAnimationScroll() {
                 
                 
         }),
-        gsap.to("#stern", 1, {
+        gsap.to("#stern", 50, {
             opacity: 0.5,
                 
             
         })
     ])
         .add([
-            gsap.to("#stern", 1, {
-                opacity: 0
-            }),
+            gsap.to("#stern", 20, {
+                opacity: 0,
+                onStart: () => playAudio(audio2) // Запускаємо другий трек
+            })  
         ])
 
         .add([
-            gsap.to("#balken1", 40, {
-                opacity: -0.5,
-                translateY: 600,
-                translateX: -1600
+            gsap.to("#balken1", 940, {
+                translateY: 1600,
+                translateX: -2600
             }),
-            gsap.to("#balken2", 60, {
-                opacity: -0.5,
-                translateY: 400,
-                translateX: -1600
+            gsap.to("#balken2", 940, {
+                translateY: 1400,
+                translateX: -2600
             }),
-            gsap.to("#balken3", 80, {
-                opacity: -0.5,
-                translateY: 200,
-                translateX: -1600,
-                onStart: () => playAudio(audio2) // Запускаємо другий трек
+            gsap.to("#balken3", 940, {
+                translateY: 1200,
+                translateX: -2600
             })
         ])
         .add([
-            gsap.to("#balken1", 5, {
+            gsap.to("#balken1", 20, {
                 opacity: 0
             }),
-            gsap.to("#balken2", 5, {
+            gsap.to("#balken2", 20, {
                 opacity: 0
             }),
-            gsap.to("#balken3", 5, {
-                opacity: 0,
-                onStart: () => playAudio(audio5)
+            gsap.to("#balken3", 20, {
+                opacity: 0
             })
         ])
         .add([
-                gsap.to("#zickzackbg", 30, {
-                scale: 3,
+                gsap.to("#zickzackbg", 800, {
+                scale: 5,
                 transformOrigin: "50% 250%",
                 onStart: () => playAudio(audio3) // Запускаємо другий трек
         
@@ -232,7 +229,8 @@ function setAnimationScroll() {
         ])*/
      
         .add([
-            gsap.to("#zickzackbg", 1, {
+            gsap.to("#zickzackbg", 10, {
+                scale: 0.5,
                 opacity: 0
             }),
             gsap.to("#tunnel1", 55, {
@@ -251,12 +249,13 @@ function setAnimationScroll() {
                 rotation: -180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#tunnel4", 175, {
+            gsap.to("#tunnel4", 275, {
                 scale: 280,
                 rotation: 180,
-                transformOrigin: "50% 50%"
+                transformOrigin: "50% 50%",
+                onStart: () => playAudio(audio5)
             }),
-            gsap.to("#tunnel5", 215, {
+            gsap.to("#tunnel5", 315, {
                 scale: 300,
                 rotation: -180,
                 transformOrigin: "50% 50%",
@@ -274,18 +273,18 @@ function setAnimationScroll() {
                 rotation: 180,
                 transformOrigin: "50% 50%",
             }),
-            gsap.to("#licht", 305, {
+            gsap.to("#licht", 505, {
                 scale: 540,
                 transformOrigin: "50% 50%"
                 
             }),
-            gsap.to("#licht", 200, {
+            gsap.to("#licht", 500, {
                 opacity: 0
                 
             }),
             
-            gsap.to("#mensch", 200, {
-                scale: 600,
+            gsap.to("#mensch", 500, {
+                scale: 200,
                 transformOrigin: "50% 50%"
                 
             })
