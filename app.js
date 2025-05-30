@@ -88,131 +88,131 @@ function setAnimationScroll() {
     ])
         .add([
         
-            gsap.to("#stern", 120, {
-                scale: 0.5,
-                transformOrigin: "50% 50%",
-            }),
-            gsap.to("#bg_city svg", 120, {
-                scale: 10,
-                transformOrigin: "50% 50%",
-                onStart: () => playAudio(audio1)
-            }),
-            gsap.to("#sticker11", 1, {
-                translateY: -1700,
-                translateX: 2600
-            }),
-            gsap.to("#sticker12", 1, {
-                translateY: -1500,
-                translateX: 2600
-            }),
-            gsap.to("#sticker13", 1, {
-                translateY: -1300,
-                translateX: 2600
-            }),
-            gsap.to("#sticker14", 1, {
-                translateY: -1700,
-                translateX: 2600
-            }),
-            gsap.to("#sticker15", 1, {
-                translateY: -1500,
-                translateX: 2600
-            }),
-            gsap.to("#sticker16", 1, {
-                translateY: -1300,
-                translateX: 2600
-            }),
-            gsap.to("#text3", 1, {
-                translateY: -1600,
-                translateX: 2600
-            }),
-            gsap.to("#text4", 1, {
-                translateY: -1400,
-                translateX: 2600
-            }),
-            gsap.to("#zickzackbg", 10, {
-                scale: 5,
-                transformOrigin: "50% 90%",
+        gsap.to("#stern", 120, {
+            scale: 0.5,
+            transformOrigin: "50% 50%",
+        }),
+        gsap.to("#bg_city svg", 120, {
+            scale: 10,
+            transformOrigin: "50% 50%",
+            onStart: () => playAudio(audio1)
+        }),
+        gsap.to("#sticker11", 1, {
+            translateY: -1700,
+            translateX: 2600
+        }),
+        gsap.to("#sticker12", 1, {
+            translateY: -1500,
+            translateX: 2600
+        }),
+        gsap.to("#sticker13", 1, {
+            translateY: -1300,
+            translateX: 2600
+        }),
+        gsap.to("#sticker14", 1, {
+            translateY: -1700,
+            translateX: 2600
+        }),
+        gsap.to("#sticker15", 1, {
+            translateY: -1500,
+            translateX: 2600
+        }),
+        gsap.to("#sticker16", 1, {
+            translateY: -1300,
+            translateX: 2600
+        }),
+        gsap.to("#text3", 1, {
+            translateY: -1600,
+            translateX: 2600
+        }),
+        gsap.to("#text4", 1, {
+            translateY: -1400,
+            translateX: 2600
+        }),
+        gsap.to("#zickzackbg", 10, {
+            scale: 5,
+            transformOrigin: "50% 90%",
             
             
-            }),
-            gsap.to("#sticker4", 50, {
-                translateX: 700,
-                translateY: 300,
-            }),
-            gsap.to("#sticker5", 50, {
-                translateX: 700,
-                translateY: -1000,
-            }),
-            gsap.to("#sticker6", 50, {
-                translateX: -700,
-                translateY: 300,
-            }),
-            gsap.to("#sticker7", 50, {
-                translateX: -700,
-                translateY: 800,
-            }),
-            gsap.to("#sticker8", 50, {
-                translateX: -700,
-                translateY: 300,
-            }),
-            gsap.to("#sticker9", 50, {
-                translateX: 600,
-                translateY: 300,
-            }),
-            gsap.to("#sticker10", 50, {
-                translateX: -600,
-                translateY: 300,
-            }),
-            gsap.to("#text2", 10, {
-                opacity: 0.5,
-            }),
-            gsap.to("#text1", 250, {
-                scale: 3,
-                transformOrigin: "50% 60%",
-            }),
-            gsap.to("#sticker17", 1, {
-                scale: 3,
-                translateY: -2000,
+        }),
+        gsap.to("#sticker4", 50, {
+            translateX: 700,
+            translateY: 300,
+        }),
+        gsap.to("#sticker5", 50, {
+            translateX: 700,
+            translateY: -1000,
+        }),
+        gsap.to("#sticker6", 50, {
+            translateX: -700,
+            translateY: 300,
+        }),
+        gsap.to("#sticker7", 50, {
+            translateX: -700,
+            translateY: 800,
+        }),
+        gsap.to("#sticker8", 50, {
+            translateX: -700,
+            translateY: 300,
+        }),
+        gsap.to("#sticker9", 50, {
+            translateX: 600,
+            translateY: 300,
+        }),
+        gsap.to("#sticker10", 50, {
+            translateX: -600,
+            translateY: 300,
+        }),
+        gsap.to("#text2", 10, {
+            opacity: 0.5,
+        }),
+        gsap.to("#text1", 250, {
+            scale: 3,
+            transformOrigin: "50% 60%",
+        }),
+        gsap.to("#sticker17", 1, {
+            scale: 3,
+            translateY: -2000,
 
-            }),
-            gsap.to("#sticker18", 1, {
-                scale: 3,
-                translateY: -2400,
+        }),
+        gsap.to("#sticker18", 1, {
+            scale: 3,
+            translateY: -2400,
 
-            }),
-            gsap.to("#sticker19", 1, {
-                scale: 3,
-                translateY: -2800,
+        }),
+        gsap.to("#sticker19", 1, {
+            scale: 3,
+            translateY: -2800,
 
-            }),
-            gsap.to("#sticker20", 1, {
-                scale: 3,
-                translateY: -3200,
-                translateX: -100
-
-
-            }),
-            gsap.to("#sticker21", 1, {
-                scale: 3,
-                translateY: -3600,
-                translateX: -100
-
-            }),
-            gsap.to("#text5", 1, {
-                scale: 5,
-                translateY: -2400,
-                translateX: -100
+        }),
+        gsap.to("#sticker20", 1, {
+            scale: 3,
+            translateY: -3200,
+            translateX: -100
 
 
-            }),
-            gsap.to("#text6", 1, {
-                scale: 5,
-                translateY: -2200,
-                translateX: -100
+        }),
+        gsap.to("#sticker21", 1, {
+            scale: 3,
+            translateY: -3600,
+            translateX: -100
+
+        }),
+        gsap.to("#text5", 1, {
+            scale: 5,
+            translateY: -2400,
+            translateX: -100
 
 
-            })
-        ])
+        }),
+        gsap.to("#text6", 1, {
+            scale: 5,
+            translateY: -2200,
+            translateX: -100
+
+
+        })
+    ])
         .add([
             gsap.to("#text1", 260, {
                 opacity: 0,
@@ -415,7 +415,7 @@ function setAnimationScroll() {
                 transformOrigin: "50% 50%"
             }),
     
-            gsap.to("#text7", 100, {
+           /*sap.to("#text7", 100, {
                 scale: 1,
                 opacity: 0,
             
@@ -427,8 +427,8 @@ function setAnimationScroll() {
                 
                 transformOrigin: "50% 35%",
                 onStart: () => playAudio(audio5)
-            }),
-            gsap.to("#text7", 200, {
+            }),*
+           /*sap.to("#text7", 200, {
                 scale: 100,
                 opacity: 1,
                 transformOrigin: "50% 35%"
@@ -445,7 +445,7 @@ function setAnimationScroll() {
             gsap.to("#text8", 100, {
                 opacity: 0,
                 transformOrigin: "50% 35%",
-            }),
+            }),*/
             gsap.to("#licht", 500, {
                 opacity: 0,
                 onStart: () => {
@@ -461,4 +461,5 @@ function setAnimationScroll() {
                 transformOrigin: "50% 45%"
                 
             })
-        ]);
+        ])
+    }
