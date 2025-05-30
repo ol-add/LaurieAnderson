@@ -325,7 +325,7 @@ function setAnimationScroll() {
             
             gsap.to("#sticker17", 300, {
                 scale: 5,
-                translateY: 1300,
+                translateY: 1600,
                 rotation: 45,
 
             }),
@@ -378,7 +378,7 @@ function setAnimationScroll() {
                 transformOrigin: "50% 50%"
             }),
             gsap.to("#sticker22", 450, {
-                scale: 260,
+                scale: 380,
             }),
             gsap.to("#tunnel2", 550, {
                 scale: 260,
@@ -386,7 +386,7 @@ function setAnimationScroll() {
                 transformOrigin: "50% 50%"
             }),
             gsap.to("#sticker23", 650, {
-                scale: 260,
+                scale: 380,
             }),
             gsap.to("#tunnel3", 750, {
                 scale: 260,
@@ -394,7 +394,10 @@ function setAnimationScroll() {
                 transformOrigin: "50% 50%"
             }),
             gsap.to("#sticker24", 850, {
-                scale: 260,
+                scale: 380,
+                translateX: -1800,
+                translateY: -100
+
             }),
             gsap.to("#tunnel4", 950, {
                 scale: 280,
@@ -402,7 +405,9 @@ function setAnimationScroll() {
                 transformOrigin: "50% 50%"
             }),
             gsap.to("#sticker25", 1050, {
-                scale: 280,
+                scale: 400,
+                translateX: -2000,
+                translateY: 100
             }),
             gsap.to("#tunnel5", 1150, {
                 scale: 300,
