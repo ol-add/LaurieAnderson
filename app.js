@@ -48,7 +48,7 @@ function setAnimationScroll() {
         scrollTrigger: {
             trigger: "#bg_city",
             start: "top top",
-            end: "+=20000",
+            end: "+=40000",
             scrub: true,
             pin: true
         }
