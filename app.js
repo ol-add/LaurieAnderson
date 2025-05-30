@@ -1,5 +1,5 @@
 function loadSVG() {
-    fetch("assets/final3.svg")
+    fetch("assets/final5.svg")
         .then(response => response.text())
         .then((svg) => {
             document.getElementById('bg_city').innerHTML = svg;
@@ -275,11 +275,13 @@ function setAnimationScroll() {
             }),
             gsap.to("#text3", 1200, {
                 translateY: 600,
-                translateX: -2000
+                translateX: -2000,
+                rotation: -35
             }),
             gsap.to("#text4", 1200, {
                 translateY: 400,
-                translateX: -2000
+                translateX: -2000,
+                rotation: -35
             })  
         ])        
             .add([
@@ -356,60 +358,87 @@ function setAnimationScroll() {
                 rotation: -180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#sticker22", 1450, {
+            gsap.to("#sticker22", 1050, {
                 scale: 380,
-                translateX: -2000,
-                translateY: -300
+                translateX: 300,
+                translateY: -1000
             }),
-            gsap.to("#tunnel2", 1550, {
+            gsap.to("#tunnel2", 1150, {
                 scale: 260,
                 rotation: 180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#sticker23", 1650, {
+            gsap.to("#sticker23", 1250, {
                 scale: 380,
                 translateX: -2000,
                 translateY: 100
             }),
-            gsap.to("#tunnel3", 1750, {
+            gsap.to("#tunnel3", 1350, {
                 scale: 260,
                 rotation: -180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#sticker24", 1850, {
+            gsap.to("#sticker24", 1450, {
                 scale: 380,
                 translateX: -2800,
                 translateY: -300
 
             }),
-            gsap.to("#tunnel4", 1950, {
+            gsap.to("#tunnel4", 1550, {
                 scale: 280,
                 rotation: 180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#sticker25", 11050, {
+            gsap.to("#sticker25", 1650, {
                 scale: 400,
                 translateX: -2000,
                 translateY: 100
             }),
-            gsap.to("#tunnel5", 11150, {
+            
+            gsap.to("#tunnel5", 1750, {
                 scale: 300,
                 rotation: -180,
                 transformOrigin: "50% 50%"
             }),
-            gsap.to("#tunnel6", 11250, {
+            gsap.to("#tunnel6", 1850, {
                 scale: 420,
                 rotation: 180,
                 transformOrigin: "50% 50%",
             }),
-            gsap.to("#licht", 11350, {
+
+            gsap.to("#licht", 1950, {
                 scale: 600,
-                transformOrigin: "50% 45%",
+                transformOrigin: "50% 45%"
+            }),
+            gsap.to("#text8", 100, {
+                scale: 200,
+                opacity: 0,
                 
-                
+                transformOrigin: "50% 45%"
+            }),
+            gsap.to("#text7", 100, {
+                scale: 200,
+                opacity: 1,
+                transformOrigin: "50% 45%"
             })
-        ])
+                
+                
+            
+        ]) 
         .add([
+            gsap.to("#text7", 100, {
+                opacity: 0,
+                transformOrigin: "50% 45%"
+            }),
+            gsap.to("#text8", 100, {
+                scale: 200,
+                opacity: 1,
+                transformOrigin: "50% 45%"
+            }),
+            gsap.to("#text8", 100, {
+                opacity: 0,
+                transformOrigin: "50% 45%"
+            }),
             
             gsap.to("#licht", 500, {
                 opacity: 0,
