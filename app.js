@@ -1,5 +1,5 @@
 function loadSVG() {
-    fetch("assets/final.svg")
+    fetch("assets/final3.svg")
         .then(response => response.text())
         .then((svg) => {
             document.getElementById('bg_city').innerHTML = svg;
@@ -280,15 +280,12 @@ function setAnimationScroll() {
                 
             }),
             gsap.to("#licht", 200, {
-                opacity: 0.2
+                opacity: 0
                 
             }),
-            gsap.to("#textfinish", 10, {
-                scale: 2
-                
-            }),
+            
             gsap.to("#mensch", 200, {
-                scale: 570,
+                scale: 600,
                 transformOrigin: "50% 50%"
                 
             })
